@@ -1,0 +1,53 @@
+/* Course: SENG 513 */
+/* Date: OCT 23, 2023 */
+/* Assignment 2 */
+/* Name: Connor Swartz */
+/* UCID: 30055899 */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Start Screen Styles */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* take the full viewport height */
+    background-color: #8B8000; 
+    gap: 20px;
+}
+
+.start-screen h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5C4033;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Liquid', sans-serif; 
+}
+
+.start-screen button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #5C4033;
+    transition: background-color 0.3s;
+    color: #A6A222;                                 
+}
+
+.start-screen button:hover {
+    background-color: #A35919; 
+}
+
+/* Responsive design: Adjust sizes for smaller screens */
+@media screen and (max-width: 768px) {
+    .board {
+        gap: 2%;
+        margin: 4% 0;
+    }
+}

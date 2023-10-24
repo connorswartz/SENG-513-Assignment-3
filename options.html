@@ -1,0 +1,44 @@
+<!-- Course: SENG 513 -->
+<!-- Date: OCT 23, 2023 -->
+<!-- Assignment 2 -->
+<!-- Name: Connor Swartz -->
+<!-- UCID: 30055899 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four or More</title>
+    <link rel="stylesheet" href="options-styles.css">
+    <link href="https://fonts.cdnfonts.com/css/liquid" rel="stylesheet">
+</head>
+<body>
+    <button class="main-menu-button" onclick="window.location.href='index.html'">
+        Main Menu
+    </button>
+    <div class="options-title">
+        Options
+    </div>
+    <div class="container">
+        <div class="starter-container">
+            <span class="label">Starting Player:</span>
+            <button id="starterOption1" class="starter-button selected" onclick="selectOption(1)">Blue</button>
+            <button id="starterOption2" class="starter-button" onclick="selectOption(2)">Red</button>
+            <button id="starterOption3" class="starter-button" onclick="selectOption(3)">Random</button>
+        </div>
+        <div class="rounds-container">
+            <span class="label">Rounds Needed to Win:</span>
+            <button id="roundOption1" class="round-button selected" onclick="selectOption(1)">1</button>
+            <button id="roundOption3" class="round-button" onclick="selectOption(3)">3</button>
+            <button id="roundOption5" class="round-button" onclick="selectOption(5)">5</button>
+        </div>
+        <div class="option-container">
+            <span class="label">Chips Needed to Win:</span>
+            <button id="option4" class="option-button selected" onclick="selectOption(4)">4</button>
+            <button id="option5" class="option-button" onclick="selectOption(5)">5</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- Course: SENG 513 -->
+<!-- Date: OCT 23, 2023 -->
+<!-- Assignment 2 -->
+<!-- Name: Connor Swartz -->
+<!-- UCID: 30055899 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four or More</title>
+    <link rel="stylesheet" href="game-styles.css">
+    <link href="https://fonts.cdnfonts.com/css/liquid" rel="stylesheet">
+</head>
+<body>
+    <button class="main-menu-button" onclick="window.location.href='index.html'">
+        Main Menu
+    </button>
+    <div class="game-container">
+        <div class="board">
+            <div class="column" onclick="placeToken(0)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(1)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(2)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(3)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(4)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(5)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="column" onclick="placeToken(6)">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div class="score-display">
+            <span id="player1-score">0</span>:<span id="player2-score">0</span>
+        </div>
+        <div class="players-info">
+            <div class="player">
+                <span>Player 1</span>
+                <div class="chip blue"></div>
+            </div>
+            <div class="player">
+                <div class="chip red"></div>
+                <span>Player 2</span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
