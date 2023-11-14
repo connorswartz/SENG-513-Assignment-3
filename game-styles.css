@@ -1,0 +1,165 @@
+/* Course: SENG 513 */
+/* Date: OCT 28, 2023 */
+/* Assignment 3 */
+/* Name: Connor Swartz */
+/* UCID: 30055899 */
+
+/* Game Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5C4033;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    padding: 2%;
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    background-color: #8B8000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Use fraction units for columns */
+    gap: 1%;
+    margin: 2% 0;
+}
+
+.cell {
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    margin-bottom: 7%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.cell.blue {
+    background-color: blue;
+}
+
+.cell.blue:hover {
+    background-color: blue;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.red:hover {
+    background-color: red;
+}
+
+.cell:hover {
+    background-color: #B0B0B0;
+}
+
+.cell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: inherit;
+}
+
+.main-menu-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #8B8000;
+    color: white;
+    font-size: 1rem;          
+    padding: 0.5rem 1rem;    
+    position: absolute;  
+    top: 8px;           
+    left: 8px;          
+    z-index: 10; 
+}
+
+.main-menu-button:hover {
+    background-color: #A6A222;
+}
+
+.players-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5C4033;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.chip {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.chip.blue {
+    background-color: blue;
+}
+
+.chip.red {
+    background-color: red;
+}
+
+.score-display {
+    text-align: center;
+    font-size: 2rem; 
+    color: #5C4033;
+}
+
+#player1-score {
+    color: blue;
+}
+
+#player2-score {
+    color: red;
+}
+
+.cell.falling-chip::before {
+    content: '';
+    display: block;
+    width: 100%; /* adjust as necessary */
+    height: 100%; /* adjust as necessary */
+    border-radius: 50%;
+    background-color: grey; /* temporary color to represent the falling chip */
+    opacity: 0.5; /* make it slightly transparent to differentiate from the placed chips */
+}
+
+
+
+/* Responsive design: Adjust sizes for smaller screens */
+@media screen and (max-width: 950px) {
+    .board {
+        gap: 2%;
+        margin: 4% 0;
+    }
+
+    .main-menu-button {
+        font-size: 0.8rem;     
+        padding: 0.4rem 0.8rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+}
